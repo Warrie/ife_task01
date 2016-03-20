@@ -36,18 +36,26 @@
 		<li class="task3">列表项目三</li>
 		<li class="task4">列表项目四</li>
 	</ul>
-<h2>图片</h2>
-	<p>好看的图片<br />
-	<img src="lifetree.jpg" alt="lifetree" title="lifetree">
-	<br />好看的图片<br />
-	<img src="lifetree.jpg" alt="lifetree" title="lifetree">
-	<br />好看的图片<br />
-	<img src="lifetree.jpg" alt="lifetree" title="lifetree">
-	<br />好看的图片<br />
-	<img src="lifetree.jpg" alt="lifetree" title="lifetree">
-	<br />好看的图片<br />
-	<img src="lifetree.jpg" alt="lifetree" title="lifetree">
-	</p>
+
+<h3>图片</h3>
+	<figure>
+		<figcaption>好看的图片</figcaption>
+		<img src="lifetree.jpg" alt="lifetree" title="lifetree">
+	</figure>
+	<figure>
+		<figcaption>好看的图片</figcaption>
+		<img src="lifetree.jpg" alt="lifetree" title="lifetree">
+	</figure><figure>
+		<figcaption>好看的图片</figcaption>
+		<img src="lifetree.jpg" alt="lifetree" title="lifetree">
+	</figure><figure>
+		<figcaption>好看的图片</figcaption>
+		<img src="lifetree.jpg" alt="lifetree" title="lifetree">
+	</figure><figure>
+		<figcaption>好看的图片</figcaption>
+		<img src="lifetree.jpg" alt="lifetree" title="lifetree">
+	</figure>
+
 <h2>最后一篇文章一级标题</h2>
 <h3>文章二级标题</h3>
 	<p>文章作者&nbsp;文章发表时间</p>
@@ -92,22 +100,22 @@
 <h3>侧栏注册窗口标题</h3>
 <form method="" action="">
 	<p><label for="email">请输入邮箱地址：</label>
-	<input type="text" name="email" /></p>
-	<p><label>邮箱地址强按要求格式输入</label></p>
+	<input type="email" id="email"  placeholder="这是一个文本输入框" /></p><!--修改输入格式为email-->
+	<p><label>邮箱地址请按要求格式输入</label></p>
 	<p><label for="password">请输入密码：</label>
-	<input type="password" name="password" />
+	<input type="password" id="password" placeholder="这是一个文本输入框" />
 	<label for="repeat">请重复输入密码：</label>
-	<input type="password" name="repeat" /></p>
+	<input type="password" id="repeat" placeholder="这是一个文本输入框" /></p>
 	<p><label>密码请为6-16位英文数字</label></p>
 </form>
 <form action="">
 	<label>性别：</label>
-	<input type="radio" name="gender" />
-	<label>男</label>
-	<input type="radio" name="gender" />
-	<label>女</label>
-	<label>城市</label>
-	<select>
+	<input type="radio" name="gender" id="male" />
+	<label for="male">男</label>
+	<input type="radio" name="gender" id="female" />
+	<label for="female">女</label>&nbsp;&nbsp;
+	<label for="city">城市:</label>
+	<select id="city">
 		<option value="1" selected="seleceted">北京</option>
 		<option value="2">上海</option>
 		<option value="3">杭州</option>
@@ -120,13 +128,15 @@
 		<option value="10">台湾</option>
 	</select>
 	<label >爱好：</label>
-	<input type="checkbox" /><label>运动</label>
-	<input type="checkbox" /><label>艺术</label>
-	<input type="checkbox" /><label>科学</label>
-	<label >个人描述：</label>
-	<textarea>请输入您的描述</textarea>
+	<input type="checkbox" id="sport" /><label for="sport">运动</label>
+	<input type="checkbox" id="art" /><label for="art">艺术</label>
+	<input type="checkbox" id="science" /><label for="science">科学</label>&nbsp;&nbsp;
+	<label for="description">个人描述：</label>
+	<textarea id="description">请输入您的描述</textarea>
 	<input type="submit" value="确认提交" />
 </form>
-<p>版权所有</p>
+<footer>
+		<p>版权所有&copy;</p>
+</footer>
 </body>
 </html>
