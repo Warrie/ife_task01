@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ife task02</title>
+<style type="text/css">
+	*{margin: 0;padding: 0;}
+	body{padding-top:70px; background-color:#CCC;}
+	.top{height:70px; width:100%; background-color:#000; position:fixed; top:0;z-index: 1;}
+	#ul1{list-style: none;height:70px; float:right; width:300px; padding-top:30px;}
+	#img1{float:left;}
+	.nav li{float: left;margin-right: 20px;}
+	.nav a{text-decoration: none; display: block;height: 25px;line-height: 25px;color: white;}
+	a:hover{color:#F93}
+	.main{background-color: #CCC; width: 100%; position: relative;}
+	.left{margin-right: 410px; }
+	.box5{width: 350px; background-color: #FFF; padding: 20px; position: absolute;top:0; right: 20px;}
+	.box1,.box2,.box3,.box4{margin:20px; background-color: #FFF; padding: 20px;}
+	h2{ font-family: "黑体";font-size:30px; font-weight:bold; margin-bottom:20px;}
+	h3{ font-family:"微软雅黑"; font-size:20px; font-weight:bold; margin-bottom:18px; color:#666;}
+	.author{font-family:"微软雅黑"; font-size:14px; margin-bottom:20px; color: #999;}
+	.content{text-indent:2em; line-height:1.5em; }
+	.pic{margin-top:20px; margin-bottom:20px; max-width: 425px; max-height: 239px; width: 100%; height: 100%;}
+	.box2 ul{list-style:none; margin-left:20px;}
+	.box2 li{margin-bottom:10px; font-family:"黑体"}
+	.box3 figure{border:1px solid #999;margin:20px auto 20px 20px; padding:10px; float: left;}
+	.box3{overflow: hidden;}
+	.box4 ol{margin-left:4em;}
+	table{border-collapse:collapse; width:100%;}
+	table,th,td{border:1px solid #999;}
+	th{background-color:#333; font-weight:bold; color:#FFF;}
+	#th1,#th2{width:40%;}
+	#th3{width:20%;}
+	th,td{height:30px; padding-left: 10px; text-align:left; vertical-align:middle}
+	.last td{background-color: #CCC; font-weight: bold;}
+	.box5 h2{margin-left: 10px; padding: 10px; border-left:3px solid #999; font-size: 15px; font-weight: bold;}
+	.box5 form{margin-left:20px; line-height:2em; font-size: 14px;}
+	#l2,#l5{display: block; text-indent: 8em; height: 10px;}
+	#l10{display:block; width:100%; height:40px; margin-left:5px; border-radius:5px; background-color:#69F; text-align: center; vertical-align: middle；}
+	footer>p{height:50px;background-color:#000; color:#FFF; text-align: center;padding-top:18px; }
+
+</style>
+</head>
+
+<body>
+<div class="top">
+	<img src="baidu.jpg" height:70px id="img1">
+	<ul class="nav" id="ul1">
+		<li><a href="#">导航一</a></li>
+		<li><a href="#">导航二</a></li>
+		<li><a href="#">导航三</a></li>
+		<li><a href="#">导航四</a></li>
+	</ul>
+</div>	
+<div class="main">
+	<div class="left">
+		<div class="box1">
+		    <h2>文章一级标题</h2>
+		    <h3>文章二级标题</h3>	
+		        <p class="author">文章作者&nbsp;文章发表时间</p>
+		        <p class="content">
+			        这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+			        <br />
+			        这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接链接到百度前端学院</a>，这是一个很长很长的段落，<strong>这里有个粗体字</strong>，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+		        </p>
+		        <img class="pic" src="lifetree.jpg" alt="lifetree" title="lifetree">
+		        <p class="content">
+			        这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+			        <br />
+			        这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。这是一个很长很长的段落，<strong>这里有个粗体字</strong>,这是一个很长很长的段落，<a href="http://ife.baidu.com" target="_blank">这里有一个链接点击后打开新窗口到百度前端学院</a>，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+			    </p>
+		</div>
+		<div class="box2">
+			<h2>另一篇文章一级标题</h2>
+			<h3>文章二级标题</h3>
+				<p class="author">文章作者&nbsp;文章发表时间</p>
+				<p class="content">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+				<br />
+				这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com" target="_blank">这里有个链接点击后打开新窗口到前端学院</a>。这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+				<img class="pic" src="lifetree.jpg" alt="lifetree" title="lifetree">
+				<ul>
+					<li class="task1">列表项目一</li>
+					<li class="task2">列表项目二</li>
+					<li class="task3">列表项目三</li>
+					<li class="task4">列表项目四</li>
+				</ul>
+		</div>
+		<div class="box3">
+			<h2>图片</h2>
+				<figure>
+					<figcaption>好看的图片</figcaption>
+					<img class="pic" src="lifetree.jpg" alt="lifetree" title="lifetree">
+				</figure>
+				<figure>
+					<figcaption>好看的图片</figcaption>
+					<img class="pic" src="lifetree.jpg" alt="lifetree" title="lifetree">
+				</figure>
+	            <figure>
+					<figcaption>好看的图片</figcaption>
+					<img class="pic" src="lifetree.jpg" alt="lifetree" title="lifetree">
+				</figure>
+	            <figure>
+					<figcaption>好看的图片</figcaption>
+					<img class="pic" src="lifetree.jpg" alt="lifetree" title="lifetree">
+				</figure>
+	            <figure>
+					<figcaption>好看的图片</figcaption>
+					<img class="pic" src="lifetree.jpg" alt="lifetree" title="lifetree">
+				</figure>
+		</div>
+		<div class="box4">
+			<h2>最后一篇文章一级标题</h2>
+			<h3>文章二级标题</h3>
+				<p  class="author">文章作者&nbsp;文章发表时间</p>
+				<ol>
+					<li>排名1</li>
+					<li>排名2</li>
+					<li>排名3</li>
+				</ol>
+				<table border="1">
+				<caption>下面是一个表格</caption>
+					<tr>
+						<th id="th1">表头</th>
+						<th id="th2">表头</th>
+						<th id="th3">表头</th>
+					</tr>
+					<tr>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
+						<td><a href="">操作</a></td>
+					</tr>
+					<tr>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
+						<td><a href="">操作</a></td>
+					</tr>
+					<tr>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
+						<td><a href="">操作</a></td>
+					</tr>
+					<tr>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
+						<td><a href="">操作</a></td>
+					</tr>
+					<tr class="last">
+						<td>总计</td>
+						<td colspan="2">1000</td>
+					</tr>
+				</table>
+		</div>
+	</div>
+	<div class="box5">
+		<h2>这里以后是一个侧栏，这是侧栏的标题</h2>
+		<form method="" action="">
+            <label for="email" id="l1" class="line">请输入邮箱地址：</label>
+			<input type="email" id="email"  placeholder="这是一个文本输入框" /> 
+			<br />
+			<label id="l2" class="line">邮箱地址请按要求格式输入</label>
+			<br />
+			<label for="password" id="l3" class="line">&nbsp;&nbsp;请输入密码：</label>
+			<input type="password" id="password" placeholder="这是一个文本输入框" />
+			<br />
+            <label for="repeat" id="l4" class="line">请重复输入密码：</label>
+			<input type="password" id="repeat" placeholder="这是一个文本输入框" />
+			<br />
+        	<label id="l5" class="line">密码请为6-16位英文数字</label>
+        	<br />
+			<label id="l6" class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;性别：</label>
+			<input type="radio" name="gender" id="male" />
+			<label for="male">男</label>
+			<input type="radio" name="gender" id="female" />
+			<label for="female">女</label>
+			<br />
+			<label for="city" id="l7" class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;城市：</label>
+			<select id="city">
+				<option value="1" selected="seleceted">北京</option>
+				<option value="2">上海</option>
+				<option value="3">杭州</option>
+				<option value="4">广州</option>
+				<option value="5">武汉</option>
+				<option value="6">长沙</option>
+				<option value="7">贵州</option>
+				<option value="8">温州</option>
+				<option value="9">香港</option>
+				<option value="10">台湾</option>
+			</select>
+			<br />
+            <label id="l8" class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;爱好：</label>
+            <input type="checkbox" id="sport" /><label for="sport">运动</label>
+            <input type="checkbox" id="art" /><label for="art">艺术</label>
+			<input type="checkbox" id="science" /><label for="science">科学</label>
+			<br />
+			<label for="description" id="l9" class="line">&nbsp;&nbsp;&nbsp;个人描述：</label>
+			<textarea rows="5" cols="24" id="description">请输入您的描述</textarea>
+			<input id="l10" class="line" type="submit" value="确认提交" />
+		</form>
+	</div>
+</div>
+<footer>
+		<p>版权所有&#169;</p>
+</footer>
+</body>
+</html>
