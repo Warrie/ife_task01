@@ -1,0 +1,394 @@
+<style type="text/css">
+*{
+	margin: 0;
+	padding: 0;
+}
+.all{
+	width: 892px;
+	height: 1286px;
+	margin: 0 auto;
+}
+.top{
+	width: 892px;
+	height: 61px;
+	margin: 0 auto;
+	border-bottom: 2px solid #938e8c;/*边框简写三个属性值缺一不可*/
+	font: 12px "黑体";
+}
+.top_left{
+	width: 110px;
+	height: 19px; 
+	color: #fff;
+	background-image: url(06/pic01.jpg);
+	padding-top: 42px;
+	text-indent: 5px;
+	float: left;
+}
+.top_right{
+	margin-top: 42px;
+	color: #d45d5c;
+	float: right;
+	text-align: right;
+}/*top_left为一块框，top_right为另一块框，浮动到右边(浮动的问题在于于起始位置向左右移动，本身它已经处于top_left之下了,处理方法是先让上面的浮动)，文字右对齐text-align:right，另一方法是两边文字同级分别左右对齐，top中加一块左上对齐的背景图不重复*/
+.top,.box1,.box2{
+	margin-bottom: 35px;
+}
+.box1{
+	width: 892px;
+	height: 301px; 
+	overflow: hidden;
+}
+.pic{
+	width: 641px;
+	height: 301px;
+	background-image: url(06/pic02.jpg);
+	float: left;
+}
+.pic02{
+	width: 191px;
+	height: 301px;
+	float: left;
+	opacity: 0.5;
+	filter: alpha(opacity=0.5);
+}/*图片透明度：img{
+	opacity:0.4;filter:alpha(opacity=40);针对 IE8 以及更早的版本 */
+.pic03{
+	width: 191px;
+	height: 301px;
+	float: right;
+	opacity: 0.5;
+	filter: alpha(opacity=0.5);
+}
+.box1_right{
+	width: 215px;
+	height: 301px;
+	border-top: 2px solid #cc8091;
+	float: right;
+}
+.box1_p01,.box1_p02{
+	height: 32px;
+	font:24px;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	color: #000;/*下划线为什么不显示？不要用text-decoration-line*/
+	border-bottom: 1px solid #000;
+	padding-bottom: 5px;
+	margin: 0 auto 0 0;
+}
+.box1_p01{margin-top: 5px;}
+#a,#t{
+	display: inline-block;
+	font-size: 30px;
+}/*首字母放大下对齐怎么实现？(后面有个box1 span)span inline-block 字体放大*/
+.box1_p01{
+	width: 70px;
+}
+.box1_p02{
+	width: 125px;
+}
+.box1_p2{
+	margin-top: 4px;
+	font: italic 12px "楷体";
+	color: #676767;
+	line-height: 10px;
+}/*段落间距用margin*/
+.box1_p3{
+	font: italic 116px "微软雅黑";
+	font-weight: bold;
+	color: #75b86b;
+	margin-left: -18px;
+	margin-top: -20px;
+	margin-bottom: -90px;
+}
+.box1_p4{
+	margin-top: 0px;
+	overflow: hidden;
+}
+#three,#pra1,#pra2{
+	color: #cc8091;
+	font-family: "微软雅黑"; 
+}
+#three{
+	font-size: 55px;
+	float: left;
+	margin-right: 10px;
+}
+.pra{
+	float: left;
+	margin-top: 70px;
+}
+.box1 #pra1{
+	font-size: 21px;
+	margin: 0px;
+}
+.box1 #pra2{
+	font-size:12px;
+	margin: 0px;
+}
+.box2{
+	width: 641px;
+	overflow: hidden;
+}
+.box2 h3{
+	font: 16px "微软雅黑";
+	font-weight: bold;
+	text-decoration-line: underline;
+}
+.box2 p{
+	margin-top: 5px;
+}
+#what{
+	width: 231px;
+	float: left;
+	margin-right:10px; 
+}
+#when{
+	width: 200px;
+	float: left;
+	margin: 0 10px;
+}
+#how{
+	width: 170px;
+	float: right;
+	margin-left: 10px;
+}
+#what h3{
+	color: #428c59;
+}
+#what p{
+	font: 12px "宋体";
+	color: #767777;
+}
+#when h3{
+	color: #d2994f;
+}
+#when p{
+	font: 12px "微软雅黑";
+	color: #231815;
+	opacity: 0.7;
+	filter: alpha(opacity=0.7)
+}
+#how h3{
+	color: #cc7680;
+}
+#how p{
+	font-size: 12px ;
+	font-family: "微软雅黑";
+	margin-bottom: 30px;
+	opacity: 0.7;
+	filter: alpha(opacity=0.7);
+}
+.box2 ul{
+	list-style: none;
+	font: 12px "微软雅黑";
+	font-weight: bold;
+	opacity: 0.7;
+	filter: alpha(opacity=0.7);
+	color: #231815;
+	padding-left: 5px;
+}
+.box2 li{
+	margin-bottom: 5px;
+}
+.box2 li span{
+	font-size: 12px;
+	color: #cd4a48;
+	font-style: oblique;
+	line-height: 16px;
+	opacity: 0.7;
+}
+.box3{
+	width:892px;
+	overflow: hidden;
+}
+.left3{
+	width: 415px;
+	float: left;
+	}/*类名 id不能以数字开头*/
+.left3 h2{
+	font: 42px "黑体";
+	font-weight: bold;
+	color: #11456b;
+	margin: 0px;
+	padding: 0px;/*h这种自带内外边距*/
+	line-height: 20px;
+}
+.left3 #the{
+	display: inline-block;
+	font: italic 72px "黑体";
+	color: #f5e327;
+	font-weight: bold;
+	line-height: 80px;
+}
+.left3 h3{
+	font: 33px "黑体";
+	font-weight: bold;
+	color: #11456b;
+	width: 415px;
+	border-bottom: 2px solid #11456b;
+	padding:20px 0 15px 0;
+	margin:0;
+}
+.left3 p{
+	font: 15px "宋体";
+	line-height: 1.2em;
+	color: #767777;
+	margin: 0;
+}
+p.large{
+	margin-top: 20px;
+}
+.left3 p.normal{
+	text-indent: 2em;
+}
+p.large:first-letter{
+	float: left;
+	font: 70px "微软雅黑";
+	color: #f5e327;text-indent: 0;
+}
+/*首字母放大特效p:first-letter*/
+/*?图片环绕效果还不知道*/
+.left3 img{
+	float: right;
+	margin: 20px 0 10px 20px;
+}
+.right3{
+	float: right;
+	width: 458px;
+}
+#right1{
+	width: 458px;
+	height: 275px;
+	background-image: url(06/pic06.jpg); 
+	position: relative;margin-bottom: 30px;
+}
+#right1 img{
+	width: 458px;
+	height: 61px;
+	opacity: 0.5;
+	filter: alpha(opacity=0.5);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+#right1 div{
+	position: absolute;
+	bottom: 8px;
+	left: 40px;
+	padding-left:20px;
+	height: 44px;
+	border-left: 3px solid #72b16a;
+	font: 26px "微软雅黑";
+	color: #fff;
+	line-height: 44px;
+}/*单行文字垂直居中line-height=height*/
+#right1 p{
+	margin: 0;
+	padding: 0;
+}
+#right1 span{
+	display: inline-block;
+	font: italic 12px "微软雅黑";
+	color: #72b16a;
+	word-spacing: 140%;
+}/*字间距word-pacing：8px;*/
+#right2{
+	width: 459px;
+	height: 318px;
+	position: relative;
+	background-image: url(06/pic08.jpg);
+}
+#right2 ul{
+	list-style-image: url(06/tri.jpg);/*小三角形格式还不会设*//*这段不会*/
+	margin: 0;
+	padding: 0;
+}
+#right2 ul li{
+	font:16px "宋体";
+	color: #5a5b5b;
+	text-align: left;
+	margin-left: 50px;
+	padding-top: 20px;
+}
+#right2 li span{
+	font: oblique 15px "宋体";
+	text-align: right;
+	line-height: 20px;
+	color: #5a5b5b;
+}
+#number{
+	width: 260px;
+	height: 160px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-image: url(06/pic09.jpg); 
+	color: #fff;
+	padding: 0;
+}
+#zero,#one{
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 86px;
+	float: left;
+}
+#zero{
+	border-right: 2px solid #fff;
+	font: 110px "微软雅黑";
+	line-height: 86px;
+	margin: 34px 0 34px 10px;
+}
+#one{
+	margin-top: 34px;
+	padding-left: 5px;
+}
+#one p{
+	margin: 0;
+	padding: 0;
+}
+.onep1{
+	font: italic 21px "黑体";
+	line-height: 27px;
+}
+.onep2{
+	font: 12px "黑体";
+}
+#quote{
+	margin-left: 255px;
+	padding: 20px;
+}/*引号美化还没做*/
+#quote1,#quote2{
+	font: 80px "黑体";
+	color: #d45d5c;
+}
+#quote1{
+	position: absolute;	
+	top: 150px;
+	left: 230px; 
+}
+#quote2{
+	position: absolute;
+	top: 260px;
+	left: 400px;
+}
+#quote p{
+	font: 12px "黑体";
+	font-weight: bold;
+	color: #5a5b5b;
+	text-indent: 40px;
+	margin-top: 27px;
+}
+footer{
+	clear: both;
+	width: 892px;
+	height: 59px;
+	margin-top: 300px;
+	border-top: 1px solid #938e8c;
+}
+footer p{
+	float: right;
+	font: 12px "黑体";
+	color: #d45d5c;
+}
+</style>
