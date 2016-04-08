@@ -1,0 +1,412 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 2px solid #0F9;
+}
+.top{
+	width: 1280px;
+	height: 55px;
+	position: relative;
+}
+.top #tp01{
+	float: left;
+	margin-left: 50px;
+	margin-top: 2px;
+}
+.top h2{
+	overflow: hidden;
+	font: 22px "黑体";
+	float: left;
+	margin-left: 5px;
+	padding-top: 12px;
+}
+.top ul{
+	list-style: none;
+	font: 16px "黑体";
+	height: 55px;
+	position: absolute;
+	right: 123px;
+	top: 0;
+}
+.top li{
+	float: left;
+}
+.top a{
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	padding: 9px 20px 20px;
+}
+.top a:hover,#ta01{
+	color: #e74f4d;
+	border-bottom: 2px solid #e74f4d;
+}
+.top #land{
+	background: url(pic/top_02.jpg) no-repeat 0 11px;/*背景图片设置*/
+	padding: 14px 20px 20px;
+	font: 16px "黑体";
+	color: #e74f4d;
+	float: right;
+	margin-right: 50px;
+}
+
+.box1{
+	width: 1280px;
+	height: 692px;
+	background: url(pic/bx1_01.jpg);
+	color: #FFF;
+}
+.box1 h1{
+	margin: 220px 0 0 120px;
+	font: 60px "黑体";/*字体改一下*/
+	font-weight: bold;
+}
+.box1 h2{
+	width: 350px;
+	line-height: 300px;/*行间距为什么行高不起作用*/
+	margin: 10px 0 0 120px;
+	font: 20px "黑体";
+}
+.box1 a{
+	display: block;
+	margin: 70px 0 0 120px;
+	text-decoration: none;
+	color: #FFF;
+	font: 32px "隶书";
+	font-weight: bold;
+	width: 350px;
+	text-align: center;
+	height: 70px;
+	line-height: 70px;
+	background: red;
+}
+
+.box2{
+	width: 1280px;
+	height: 100px;
+	background: url(pic/box2_01.jpg) no-repeat;
+	padding-top: 125px;
+}
+.box2 p{
+	float: left;
+	width: 215px;
+	height: 80px;
+	text-align: center;
+	font: 10px "宋体";
+	border-right: 1px solid #999;
+	padding: 0 50px;
+}
+
+.box3{
+	background-image: url(pic/box3_01.jpg);
+	background-repeat: no-repeat;
+	background-color: #ededec;
+	width: 1280px;
+	height: 360px;
+}
+.box3 h2{
+	color: #a1a1a1;
+	font: 55px "微软雅黑";
+	margin-top: 200px;
+	text-align: center;
+}
+
+.box4{
+	background: url(pic/box4_01.jpg) no-repeat;
+	color: #FFF;
+	width: 1280px;
+	height: 341px;
+}
+.box4 h3{
+	font: 30px "微软雅黑";
+	text-align: center;
+	margin-top: 30px;
+}
+.box4 h3 span{
+	display: inline-block;
+	height: 30px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #fff;
+}
+.box4 p{
+	text-align: center;
+	margin-top: 20px;
+	font: 10px "微软雅黑";
+}
+.box4 form{
+	overflow: hidden;
+	padding-left: 125px;
+	margin-top: 40px;
+}
+.box4 form select{
+	float: left;
+	width: 237px;
+	height: 37px;
+	margin-right: 30px;
+}
+.box4 form input{
+	float: left;
+	width: 237px;
+	height: 37px;
+	background-color: #e74f4d;
+}
+
+.box5{
+	height: 605px;
+	width: 1209px;
+	background-color: #f7f7f7;
+	overflow: hidden;
+	padding-left: 71px;
+}
+.box5 div{
+	width:220px; 
+	margin: 0 20px;
+	float: left;
+	margin: 98px 30px;
+}
+.box5 div h3{
+	font: 15px "黑体";
+	text-align: center;
+}
+.box5 div h4{
+	font: 8px "黑体";
+	text-align: center;
+	color: #818181;
+}
+
+.box6{
+	width: 1280px;
+	height: 1088px;
+	overflow: hidden;
+}
+.box6 div,#b6_2{
+	float: left;
+}
+.box6 #b6_1,#b6_2{
+	height: 565px;
+}
+.box6 #b6_3,#b6_4,#b6_5{
+	height: 523px;
+	width: 410px;
+}
+.box6 h2,h3,h4{
+	text-align: center;
+}
+.box6 #b6_1{
+	background: url(pic/box6_01.jpg);
+	width: 850px;
+	color: #fff;
+}
+.box6 #b6_1 h2{
+	font: 130px "微软雅黑";
+	margin-top: -40px;
+}
+.box6 #b6_1 h3{
+	margin-top:125px; 
+	font: 60px "微软雅黑";
+}
+.box6 #b6_1 p{
+	font: 20px;
+	text-align: center;
+	margin-bottom: 10px
+}
+.box6 #b6_2{
+	width: 422px;
+}
+.box6 #b6_2 h3{
+	font: 25px "黑体";
+	font-weight: bold;
+	text-align: center;
+	margin-top: 130px;
+}
+.box6 #b6_2 span{
+	color: #e74f4d;
+}
+.box6 #b6_2 p{
+	color: #c9c9c9;
+	margin:10px 60px;
+	line-height: 2em;
+
+}
+.box6 #b6_2 form{
+	width: 106px;
+	height: 36px;
+	color:#e74f4d;
+	border: 2px solid #e74f4d;
+	margin: 20px auto;
+	padding: 10px 35px;
+}
+.box6 #b6_2 form input{
+	color: #e74f4d;
+	background-color: inherit;
+}
+.box6 #b6_3{
+	text-align: center;
+	color: #fff;
+	background: #e74f4d;
+}
+.box6 h4{
+	font: 15px "宋体";
+	margin-top: 150px;
+}
+.box6 #b6_3 p{
+	margin: 20px 0;
+}
+.box6 #b6_3 form{
+	width: 106px;
+	height: 30px;
+	color:#e74f4d;
+	border: 2px solid #fff;
+	margin: 20px auto;
+	padding: 10px 40px; 
+}
+.box6 #b6_3 form input{
+	color: #fff;
+	background-color: inherit;
+}
+.box6 #b6_4{
+	text-align: center;
+}
+.box6 #b6_4 p{
+	margin: 20px 0;
+}
+.box6 #b6_4 form{
+	width: 106px;
+	height: 30px;
+	color:#e74f4d;
+	border: 2px solid #e74f4d;
+	margin: 20px auto;
+	padding: 10px 40px; 
+}
+.box6 #b6_4 form input{
+	color: #e74f4d;
+	background-color: inherit;
+}
+
+.box7{
+	width: 1280px;
+	height: 747px;
+}
+.box7 #up h2,p{
+	text-align: center;
+}
+.box7 #up h2{
+	font: 30px "黑体";
+	margin-top: 113px;
+}
+.box7 #up p{
+	font: 10px "宋体";
+	color: #d4d4d4;
+	margin: 10px 200px;
+}
+.box7 #down{
+	overflow: hidden;
+	height: 457px;
+	margin-top: 89px;
+}
+.box7 #down div{
+	float: left;
+}
+.box7 #down1{
+	width: 297px;
+	height: 287px;
+	margin:0 50px 0 135px; 
+}
+.box7 #down1 h3{
+	text-align: left;
+	font: 17px;
+	margin-bottom: 20px;
+}
+.box7 #down1 p{
+	text-align: left;
+	font: 10px;
+	margin-bottom: 30px;
+}
+.box7 #down2{
+	width: 646px;
+	height: 288px;
+}
+.box7 #down2 div,#des,#sub{
+	margin-bottom: 17px;
+	background-color: #ececee;
+}
+.box input{
+	background: #ececee;/*输入框背景色*/
+}
+.box7 div input{
+	display: inline;
+	width: 200px;
+}
+.box7 div label{
+	display: inline;
+}
+.box7 #w1,#w2,#w3,#w4{
+	width: 305px;
+	height: 40px;
+	float: left;
+} 
+.box7 #w3>input,#w4>input{
+	width: 160px;
+}
+.box7 #w1,#w3{
+	margin-right: 10px;
+}
+.box7 #des{
+	width: 637px;
+	height: 121px;
+}
+.box7 #sub{
+	width: 100%;
+}
+
+.box8{
+	width: 1280px;
+	height: 363px;
+	background: url(pic/box8_01.jpg) no-repeat 0 240px #32363e;
+}
+.box8 h2,p{
+	color: #fff;
+	text-align: center;
+}
+.box8 h2{
+	font-size: 30px;
+	margin-top: 83px;
+}
+.box8 h2{
+	font-size: 8px;
+}
+.box8 form{
+	width: 530px;
+	margin: 0 auto;
+	background-color: inherit;
+	margin-top: 20px;
+}
+.box8 input{
+	display: inline;
+	margin: 0 auto;
+}
+.box8 #em{
+	width: 433px;
+	height: 41px;
+	margin: 0;
+}
+.box8 #tj{
+	width: 81px;
+	height: 41px;
+	margin: 0;
+	background-color: inherit;
+}
+footer{
+	background: #2f2f38;
+	color: #fff;
+	height: 70px;
+	width: 1280px;
+}
+footer #p1{
+	float: left;
+	margin: 29px 0 0 95px;
+}
+footer #p2{
+	float: right;
+	margin: 29px 37px 0 0;
+}
